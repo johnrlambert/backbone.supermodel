@@ -28,7 +28,7 @@
     "type": "git",
     "url": "https://github.com/laoshanlung/backbone.supermodel.git"
   },
-  "dependencies": {
+  "peerDependencies": {
     "backbone": "~1.1.0",
     "underscore": "~1.5.2"
   }
