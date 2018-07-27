@@ -1,1 +1,1 @@
-module.exports = require('./build/backbone.supermodel.amd')
+module.exports = require('./backbone.supermodel.coffee')
