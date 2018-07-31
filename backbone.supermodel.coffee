@@ -115,10 +115,10 @@ getRelation = (obj, attr, value) ->
     relations = _.result(obj, 'relations')
     relation = relations[attr]
   if value and !relation
-    relation = Model
+    relation = Backbone.Model
   # catch all the weird stuff
   if relation == undefined
-    relation = Model
+    relation = Backbone.Model
   relation
 
 setupBackref = (obj, instance, options) ->
@@ -165,7 +165,7 @@ SuperModel = Backbone.Model.extend(
     if !_.isArray(value) and _.isObject(value) and isSimpleObject(value)
       # special case when the object value is empty, just set it to an empty model
       if _.size(value) == 0
-        obj.attributes[finalPath] = new Model
+        obj.attributes[finalPath] = new Backbone.Model
       else
         for j of value
           newPath = finalPath + '.' + j
