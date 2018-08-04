@@ -1,3 +1,4 @@
+_ = require('underscore')
 _triggerNestedChanges = (path) ->
   m = path.length - 1
   while m >= 0
